@@ -1,0 +1,42 @@
+/* .darkBG {
+  background: #999;
+}
+
+.darkerBG {
+  background: #666;
+}
+
+.darkestBG {
+  background: #333;
+} */
+
+.myPanel {
+  border: 1px solid #37ad56;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #ccc;
+  margin: 3%;
+}
+
+.myPanel .heading {
+  background: #c5db67;
+  border-radius: 5px 5px 0 0;
+  color: #37ad56;
+  padding: 10px 20px;
+}
+
+.myPanel .body {
+  padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+  display: none;
+}
+
+.myPanel:hover {
+  box-shadow: 0px 0px 8px #666;
+  border: 2px solid #37ad56;
+}
+
+.myPanel:hover .showOnHover {
+  display: inline-block;
+}
