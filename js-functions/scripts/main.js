@@ -1,6 +1,9 @@
-function go() {
-  alert ("hi")
-  alert("hey there!")
+function go(name, age) {
+  if (age < 20) {
+    return name + "!"
+  } else {
+    return name
+  }
 }
 
-go()
+alert( go("Will", 15))
