@@ -11,6 +11,7 @@
         <button id="btn1">#btn1</button>
         <button id="btn2">#btn2</button>
         <button id="btn3">#btn3</button>
+        <button id="btn4">#btn4</button>
       </div>
 
       <div class="row">
@@ -65,8 +66,45 @@
 
     <script>
       $(function() {
-        $("#panel1").hide()
-        $("#panel2").cdd({opacity: '0.5'})
+        // $("#panel1").hide()
+        // $("#panel2").css({opacity: '0.5'})
+        // $("#btn1").html('my button')
+
+        // $("#btn1").on("mouseover", function() {
+        //   $("#panel1").fadeOut()
+        // })
+        //
+        // $("#btn2").on("mouseover", function() {
+        //   $("#panel2").fadeOut()
+        // })
+        //
+        // $("#btn3").on("mouseover", function() {
+        //   $("#panel3").fadeOut()
+        // })
+        //
+        // $("#btn4").on("mouseover", function() {
+        //   $("#panel4").fadeOut()
+        // })
+        //
+        // $("#btn1").on("click", function() {
+        //   $("#panel1").fadeIn()
+        // })
+        //
+        // $("#btn2").on("click", function() {
+        //   $("#panel2").fadeIn()
+        // })
+        //
+        // $("#btn3").on("click", function() {
+        //   $("#panel3").fadeIn()
+        // })
+        //
+        // $("#btn4").on("click", function() {
+        //   $("#panel4").fadeIn()
+        // })
+
+        $("#btn1").on("click", function() {
+          $("#panel1 .panel-body").html("My new panel content")
+        })
       })
     </script>
 
