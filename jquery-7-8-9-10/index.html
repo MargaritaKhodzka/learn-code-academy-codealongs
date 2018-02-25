@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>jQuery Ajax Tutorial</title>
+    <link rel='stylesheet' href='styles/main.css'>
   </head>
 
   <body>
@@ -9,6 +10,25 @@
 
     <h2>Coffee Orders</h2>
     <ul id='orders'></ul>
+
+    <template id='order-template'>
+      <li data-id='{{id}}'>
+        <p>
+          <strong>Name:</strong>
+          <span class='noedit name'>{{name}}</span>
+          <input class='edit name'/>
+        </p>
+        <p>
+          <strong>Drink:</strong>
+          <span class='noedit drink'>{{drink}}</span>
+          <input class='edit drink'/>
+        </p>
+        <button data-id='{{id}}' class='remove'>X</button>
+        <button class='editOrder noedit'>Edit</button>
+        <button class='saveEdit edit'>Save</button>
+        <button class='cancelEdit edit'>Cancel</button>
+      </li>
+    </template>
 
     <h4>Add a coffee order</h4>
     <p>name: <input type='text' id='name'></p>
